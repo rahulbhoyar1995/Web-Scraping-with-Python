@@ -6,7 +6,7 @@ Repository containing various web scraping projects using Python. Extract valuab
 
 **The main objectives of these projects are :**
 
-(A) Perform web scraping 
+(A) Perform web scraping
 
 (B) After scraping, organise the unstructured data into structured data (Pandas DF/CSV files.)
 
@@ -29,25 +29,20 @@ Your contributions are highly valued. Whether you want to fix a bug, add a new f
    ```
 3. Create a new branch for your changes.
 
-   ```
-   git checkout -b feature/your-feature-name
-
-   ```
+   ``git checkout -b feature/your-feature-name``
 4. Make your desired changes in the project.
 5. Test your changes locally to ensure they work as expected.
 6. Commit your changes.
 7. **Opening a pull request** : Push your changes to your forked repository.
 
-   ``git push origin feature/your-feature-name``
-8. Visit the original repository on GitHub. (link : [https://github.com/rahulbhoyar1995/web-scraping-projects]())
-
-   9. Click on the "Pull Requests" tab.
-
-   10. Click on the "New Pull Request" button.
-   11. Select the branch with your changes.
-   12. Provide a clear and concise title for your pull request.
-   13. Add a description that explains the changes you made.
-   14. Click on the "Create Pull Request" button.
+   `git push origin feature/your-feature-name`
+8. Visit the original repository on GitHub.  (link : [https://github.com/rahulbhoyar1995/web-scraping-projects](https://chat.openai.com/c/13709208-aaf6-4e71-b688-dd229200ffcf))
+9. Click on the "Pull Requests" tab.
+10. Click on the "New Pull Request" button.
+11. Select the branch with your changes.
+12. Provide a clear and concise title for your pull request.
+13. Add a description that explains the changes you made.
+14. Click on the "Create Pull Request" button.
 
 ### Guidelines
 
