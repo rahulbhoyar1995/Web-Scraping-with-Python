@@ -1,4 +1,4 @@
-# Web Scraping Projects
+# Web Scraping with Scrapy
 
 #### Author : Mr. Rahul Bhoyar
 
