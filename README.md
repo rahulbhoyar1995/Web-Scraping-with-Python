@@ -1,6 +1,7 @@
 # Web Scraping with Scrapy
 
-#### Author : Mr. Rahul Bhoyar
+#### Author : Mr. Rahul Bhoyar and Akshaya Kakde
+
 
 Repository containing various web scraping projects using Python. Extract valuable data from websites for analysis and insights.
 
