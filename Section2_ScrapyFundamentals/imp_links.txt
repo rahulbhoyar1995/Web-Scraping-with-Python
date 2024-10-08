@@ -1,0 +1,84 @@
+Scrapy Documentation link
+
+https://docs.scrapy.org/en/latest/
+
+
+Target Website link
+
+https://www.worldometers.info/world-population/population-by-country/
+
+
+scrapy startproject worldometer
+
+cd worldometer
+
+scrapy genspider countries https://www.worldometers.info/world-population/population-by-country 
+
+
+# Open Scrapy shell
+
+scrapy shell
+
+fetch("https://www.worldometers.info/world-population/population-by-country")
+
+r = scrapy.Request(url="https://www.worldometers.info/world-population/population-by-country")
+
+fetch(r)
+
+response.body
+
+view(response)
+
+## Title Data
+
+# XPATH
+title = response.xpath("//h1")
+
+title
+
+title = response.xpath("//h1/text()")
+
+title.get()
+
+# CSS
+
+title_css = response.css("h1::text")
+
+title_css
+
+title_css.get()
+
+
+## Countries Data
+
+countries = response.xpath("//td/a")  
+
+countries = response.xpath("//td/a/text()")  
+
+countries.getall()
+
+
+countries_css = response.css("td a::text").getall()
+
+
+#Update the code in countries.py
+
+import scrapy
+
+
+class CountriesSpider(scrapy.Spider):
+    name = "countries"
+    allowed_domains = ["www.worldometers.info"]
+    start_urls = ["https://www.worldometers.info/world-population/population-by-country"]
+
+    def parse(self, response):
+        title = response.xpath("//h1/text()").get()
+        countries = response.xpath("//td/a/text()").getall()
+        
+        yield {
+            "title": title,
+            "countries": countries
+        }
+
+
+scrapy crawl countries
