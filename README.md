@@ -1,4 +1,4 @@
-# Web Scraping with Scrapy
+# Web Scraping with Python
 
 #### Author : Mr. Rahul Bhoyar and Akshaya Kakde
 
