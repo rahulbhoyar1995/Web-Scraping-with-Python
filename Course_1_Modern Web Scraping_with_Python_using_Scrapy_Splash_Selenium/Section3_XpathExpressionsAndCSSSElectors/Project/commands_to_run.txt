@@ -1,0 +1,12 @@
+scrapy startproject worldometer 
+
+cd worldometer
+
+
+To run crawler
+
+scrapy crawl countries
+
+TO store response in file
+
+scrapy crawl countries -o output.csv
